@@ -31,7 +31,7 @@ export const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Left Column - Introduction */}
           <div className="flex-1 text-center lg:text-left">
-            <motion.h1 
+            <motion.h1
               className="text-4xl md:text-6xl font-bold mb-6"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -41,7 +41,7 @@ export const Hero = () => {
                 Ganilson Garcia
               </span>
             </motion.h1>
-            
+
             <TypeAnimation
               sequence={[
                 'Full Stack Developer',
@@ -67,30 +67,33 @@ export const Hero = () => {
               repeat={Infinity}
             />
 
-            <motion.div 
+            <motion.div
               className="flex flex-wrap gap-4 justify-center lg:justify-start"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
               <a
-                href="https://github.com/ganilson"
+                href="https://github.com/ganilson/portfolioweb"
                 target="_blank"
-                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-3 rounded-lg transition-colors"
               >
                 <Github size={20} />
                 View on GitHub
               </a>
-              <button className="inline-flex items-center gap-2 bg-[#2D2D2D] hover:bg-[#3D3D3D] text-gray-300 font-medium px-6 py-3 rounded-lg transition-colors">
+              <a 
+                   href="https://github.com/ganilson"
+                target="_blank"
+              className="inline-flex items-center gap-2 bg-[#2D2D2D] hover:bg-[#3D3D3D] text-gray-300 font-medium px-6 py-3 rounded-lg transition-colors">
                 <ExternalLink size={20} />
                 View Projects
-              </button>
+              </a>
+
             </motion.div>
           </div>
 
           {/* Right Column - JSON Preview */}
-          <motion.div 
+          <motion.div
             className="flex-1"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
